@@ -1,0 +1,13 @@
+accelerate==1.2.1
+tqdm==4.67.1
+matplotlib==3.8.4
+transformers==4.47.1
+tokenizers==0.21.0
+
+# For Linux
+torch==2.5.1; sys_platform == 'linux'
+# For Windows
+# --extra-index-url https://download.pytorch.org/whl/cu121 # 在Linux下请把这一行注释掉
+torch==2.5.1; sys_platform == 'win32'
+# For RWKV7
+git+https://github.com/fla-org/flash-linear-attention.git@main

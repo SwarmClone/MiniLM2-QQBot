@@ -1,0 +1,29 @@
+{
+    "model": "NGPT",
+    
+    "dataset_path": "../../datasets/sft/dataset.json",
+    "tokenizer_path": "../tokenizer32k.json",
+    "max_length": 1024,
+    "model_dim": 1024,
+    "num_heads": 16,
+    "num_layers": 20,
+    "dropout": 0.1,
+    "batch_size": 1,
+    "val_batch_size": 0,
+    "n_batches_per_step": 128,
+    "max_learning_rate": 3e-4,
+    "min_learning_rate": 1e-6,
+    "warmup_steps": 0,
+    "total_steps": 2000,
+    "validation_interval": 50,
+
+    "system_prompt": "人类：你是一个名为MiniLM2的小型语言模型。你会忠实地回答人类的问题、完成人类给出的任务，并与人类进行交流。\n\n\nAI：好的，我是MiniLM2。我的名字是MiniLM2，我是一个小型语言模型。我会忠实地回答你的问题、完成你的任务，并与你进行交流。让我们开始对话吧！",
+
+    "top_p": 0.6,
+    "temperature": 0.5,
+
+    "checkpoint_file": "checkpoint_2000_bilingual.pt",
+    "checkpoint_step": 2000,
+
+    "log_file": "sft.log"
+}
